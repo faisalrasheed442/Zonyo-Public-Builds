@@ -45,7 +45,7 @@ your own network. By **[zylio](https://zylio.net)**.
 - **Bill by the hour, packages or prepaid** — per-station prices, rounding once on the final
   bill, and consoles / VR / pool tables as manual stations with a time-up alarm.
 - **Lock PCs automatically when time's up** — full screen on every monitor, with on-screen
-  and spoken warnings at 10 and 5 minutes. Alt+Tab, Alt+F4 and the Windows key are blocked.
+  and spoken warnings at 10 and 5 minutes in 28 languages, in a female or male voice. Alt+Tab, Alt+F4 and the Windows key are blocked.
 - **One screen to run the floor** — live numbers, a "Needs you now" queue, a tile per station
   and one big key for the next step. Settle with cash received and change.
 - **English + Urdu on every gaming PC** — every customer message in two languages; the
