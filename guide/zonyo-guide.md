@@ -78,6 +78,14 @@ shown is demo content: the café, its PCs, the customers' sessions and the takin
 39. [Words you will see](#39-words-you-will-see)
 40. [Get help](#40-get-help)
 
+**Part 8. More for clubs**
+41. [Move a customer to another PC](#41-move-a-customer-to-another-pc)
+42. [Switch PCs on and off from the counter](#42-switch-pcs-on-and-off-from-the-counter)
+43. [Pay at the end: no set time](#43-pay-at-the-end-no-set-time)
+44. [Customer accounts and credit](#44-customer-accounts-and-credit)
+45. [Signing in on a gaming PC](#45-signing-in-on-a-gaming-pc)
+46. [The game launcher](#46-the-game-launcher)
+
 ---
 
 # Part 1. Get started
@@ -183,9 +191,11 @@ The Floor is zonyo Server's main screen.
 
 ![A tour of the Floor](images/floor-tour.png)
 
-1. **The menu.** Floor, Stations, Packages, Reports, Audit and Settings. Hover an icon to see its name. The green dot at
-   the bottom is the Server's status; hover it for its address and how many PCs are connected. The **⋯** button opens
-   more: the web companion link, updates, and quitting.
+1. **The menu.** Every page has its name under its icon: Floor, Stations, Packages, Reports, Audit, Customers and
+   Games, with **Settings** at the bottom. Under Settings, **More** opens the rest, in three groups: the web companion,
+   every gaming PC at once (update, detect games, switch on, restart, shut down) and this Server (settings, updates,
+   about, quit). The green dot marked **Live** is the Server's status; hover it for its address and how many PCs are
+   connected.
 2. **The numbers line:** PCs online, free now, ending soon, waiting to be settled, money on PCs that stopped answering,
    and today's takings. Amber and red appear only where something needs you.
 3. **Filters:** All, Needs you, Playing, Free and Off.
@@ -497,7 +507,8 @@ Further down the **Customize** tab:
 
 Pictures apply straight away, with no need to save. PCs that are on change within seconds, and the others when they start.
 Each PC keeps a copy, so your lock screen shows even when a PC starts with no network. To give one PC its own wallpaper,
-right-click it on the Floor → **Wallpaper for this PC…**; **Use the shop wallpaper** puts it back.
+right-click it on the Floor → **Wallpaper for this PC…**; **Use the shop wallpaper** puts it back. To show the covers of
+each PC's own games instead, tick **Games on this PC** (section 48).
 
 This is what a customer sees:
 
@@ -511,7 +522,7 @@ Click **Settings**, then **Language and look**.
 
 ![Settings, Language and look](images/settings-language.png)
 
-1. **Language of this app (Server):** 30 languages. The window switches at once, right to left for Urdu, Arabic, Persian,
+1. **Language of this app (Server):** 51 languages. The window switches at once, right to left for Urdu, Arabic, Persian,
    Pashto and Punjabi.
 2. **Language on gaming PCs:** what customers read on the lock screen, the countdown and every notice.
 3. **Show English too:** **Yes, on top** (English first, your language underneath), **Yes, underneath** (your language
@@ -567,7 +578,9 @@ languages, and the staff PIN box.
 1. The **PIN** box and
 2. **Unlock** button are for staff only (see [section 30](#30-the-staff-unlock-pin)).
 
-**While playing** a small countdown card sits in the top corner. It turns amber near the end.
+**While playing** a small timer sits in the top-right corner: the time left and a thin progress line. It turns amber
+near the end. It never gets in the way: clicks go straight through it to the game or the browser underneath, and it
+fades almost away while the mouse is over it.
 
 ![The countdown over a game](images/client-hud.png)
 
@@ -653,7 +666,7 @@ To move to a new counter PC and keep your history too, copy the database across 
 ## 34. The web companion on your phone
 
 The web companion is the Floor in a browser, for walking around the café. First set a password in
-**Settings → Security** (see [section 32](#32-security-settings)). Then, in zonyo Server, click **⋯** at the bottom of the
+**Settings → Security** (see [section 32](#32-security-settings)). Then, in zonyo Server, click **More** at the bottom of the
 menu → **Copy the web companion link**, and open that address on a phone or tablet on the café Wi-Fi. It looks like
 `http://192.168.1.10:48080`.
 
@@ -674,10 +687,10 @@ on until the default password is replaced.
 
 **zonyo Server** checks for updates by itself, but never installs one on its own. When a new version is out, the menu shows
 **Update ready**. Click it to read what is new, then click **Download and install**, and **Install and restart** once the
-download is done. You can also choose **Later** or **Skip this version**. To check now, click **⋯** → **Check for updates
+download is done. You can also choose **Later** or **Skip this version**. To check now, click **More** → **Check for updates
 to this Server**.
 
-**The gaming PCs** update from the Server: right-click a PC → **Update this PC**, or **⋯** → **Update every gaming PC**.
+**The gaming PCs** update from the Server: right-click a PC → **Update this PC**, or **More** → **Update every gaming PC**.
 
 - A free PC updates at once, even at its lock screen, and comes back locked.
 - A PC with a customer or an unpaid bill updates as soon as it is settled. A PC that is switched off updates when it next
@@ -699,7 +712,7 @@ Your billing database is a single file on the counter PC:
 **zonyo backs it up every day.** A copy goes into the `Backups` folder next to it, and the last 14 days are kept. To keep
 a copy somewhere else as well, copy that folder to a USB stick now and then.
 
-To restore or move the database: quit zonyo Server (**⋯** → **Quit**), copy the database file into place, and start zonyo
+To restore or move the database: quit zonyo Server (**More** → **Quit**), copy the database file into place, and start zonyo
 Server again.
 
 Nothing leaves your network: zonyo has no cloud and sends your data nowhere.
@@ -758,3 +771,208 @@ cannot remove it.
 
 zonyo is free, and made by a small team at zylio. If something in this guide doesn't match your screen, tell us at
 [support@zylio.net](mailto:support@zylio.net).
+
+---
+
+# Part 8. More for clubs
+
+## 41. Move a customer to another PC
+
+A PC breaks, friends want to sit together, or a customer wants the better seat: move the session instead of
+settling and starting again. Click the playing PC, then **Move** in the side panel (or right-click it → **Move to
+another station…**). On your phone, open the PC in the web companion and tap **Move**.
+
+![Moving a session to another PC](images/move-session.png)
+
+1. Pick the free station to move to. Only stations that are free and, for a gaming PC, switched on are listed.
+2. Read the note under it: it says what happens, including the price.
+3. Click **Move session**.
+
+The customer keeps everything: the time left, what they have paid, their package and **the price they were sold**.
+If the new station normally costs more or less, the note says so, for example "PC 07 normally costs Rs 150 / hr.
+This customer keeps Rs 100 / hr until the session ends." The PC they leave locks at once; the new one opens with the
+same countdown.
+
+- **To or from a console:** allowed. A console cannot lock itself, so staff watch the time there.
+- **A paused session** moves and stays paused, so the walk is not billed. Press **Resume** once the customer sits down.
+  (It cannot go to a console, because a console cannot be paused.)
+- **Time is up:** settle it or add time first. There is nothing left to play on the new seat.
+- Every move is in the audit log on both stations, for example "Session moved PC 03 → PC 07".
+
+## 42. Switch PCs on and off from the counter
+
+Click a PC, then **More** in the side panel (or right-click it):
+
+- **Restart…** and **Shut down…** for a PC that is on.
+- **Switch on (Wake-on-LAN)** for a PC that is off.
+
+![Shutting down a PC from the counter](images/power-confirm.png)
+
+1. Read the question. If a customer is playing, it names the money at stake.
+2. Click **Shut down** (or **Restart**).
+
+At opening and closing time, use **More** at the bottom of the left bar: **Switch on every PC that is off**,
+**Restart every free PC…** and **Shut down every free PC…**. "Free" means switched on with nobody playing and no unpaid
+bill, so a customer is never switched off this way.
+
+- **A customer's bill is never ended by switching a PC off.** The session keeps its time and money, just as when the
+  power goes, and you settle it as usual.
+- Only your own Server can switch your PCs off, and it works even when Windows does not let the customer's account
+  shut down.
+- If a PC says **update this PC to use remote power**, it has an older zonyo Client: update it first (right-click →
+  **Update this PC**).
+- **Switch on** needs Wake-on-LAN turned on in the PC's BIOS and network card settings, and the PC must be on the same
+  network as the counter PC. Switching on and off are written in the audit log.
+
+## 43. Pay at the end: no set time
+
+For a customer who does not know how long they will play. Click a free PC, then **Start session**, then **Pay at the
+end**.
+
+![Starting a session that is paid at the end](images/start-open.png)
+
+1. Click **Pay at the end**.
+2. Pick the most it may run before the PC locks. 12 hours is the standard; pick less if you prefer.
+3. Optionally type a money limit in **Lock at**: the PC locks when the bill reaches it. Leave it at 0 for none.
+4. Click **Start · pay at the end**.
+
+The gaming PC shows the **time played** and the bill so far. The bill runs by the minute at the PC's price. When the
+customer is done, click the PC and **End & settle**: zonyo shows the exact amount, rounded once. If the customer
+plays up to the limit, the PC warns them like any session and then locks; **Raise the limit** in the side panel gives
+more room. In a club that does not charge, the same option is called **No set time**.
+
+## 44. Customer accounts and credit
+
+Regulars can keep credit with you and play on any PC without coming to the counter each time. Click **Customers**
+in the left bar.
+
+![The Customers page](images/customers.png)
+
+1. **Customers** in the left bar.
+2. **New customer**: type the name (and a phone number if you like) and click **Create account**.
+3. **Top up** a customer's credit.
+
+After you create an account, zonyo shows its **account number** and **PIN** once. Give them to the customer, or
+write them on a card. zonyo keeps only a scrambled copy of the PIN, so it cannot show it again; if it is forgotten,
+use **More → Reset PIN**.
+
+![The PIN, shown once](images/customer-pin.png)
+
+To add credit, click **Top up**, pick or type the amount the customer pays you, and click **Take … in cash**. The sheet
+shows the credit before and after.
+
+![Topping up a customer's credit](images/customer-top-up.png)
+
+- **History** lists every top-up, game, refund and adjustment, with the credit after each one.
+- **More → Refund…** gives cash back out of the credit; **More → Adjust credit…** corrects it without cash. Both
+  need a reason and are written in the audit log.
+- **More → Close account** stops the account signing in; the credit is kept.
+- **Money:** a top-up is credit you sold, not takings yet. It counts as takings when the customer plays it, so your
+  daily takings mean time played, as always. Reports show the credit sold, played, refunded and still owed to
+  customers, and the cash taken.
+- In a club that does not charge, customer accounts are hidden. Their credit is kept for when you charge again.
+
+## 45. Signing in on a gaming PC
+
+On a locked gaming PC the customer presses **Customer sign in** in the middle of the screen, types their account
+number and PIN, and presses **Sign in**.
+
+![Signing in with a customer account](images/client-customer-sign-in.png)
+
+1. The account number.
+2. The PIN.
+3. **Sign in**.
+
+The PC opens and counts down the time their credit buys at that PC's price. They hear the usual warnings before it
+runs out, and the PC locks when the credit is used up. The small round key beside the timer shows their name and the credit
+left, with **Log out**: press it twice to stop. The rest of the credit stays for next time.
+
+- The **staff unlock** box in the corner is separate: a customer PIN never opens it, and the staff PIN is never a
+  customer PIN.
+- After several wrong PINs the PC waits before the next try, and the account locks for 15 minutes. **Reset PIN** at
+  the counter opens it again.
+- Signing in needs the counter PC. If the gaming PC cannot reach it, the screen says so.
+- To give a playing customer more time, top up their credit: the PC gets the extra time at once.
+
+## 46. The game launcher
+
+Give customers one place to start your games. Click **Games** in the left bar.
+
+![The Games page](images/games.png)
+
+1. Type the game's name.
+2. Type the program's full path on the gaming PCs, for example `C:\Games\Steam\steam.exe`, and any arguments,
+   for example `-applaunch 730` to open a Steam game directly.
+3. Click **Add game**. Use the arrows to change the order.
+
+While a session is running, a small round key with a gamepad sits beside the timer on each gaming PC. Pressing it
+shows **Games**, which opens a grid of your games, each with its own icon, and a tile starts that game.
+
+![Games on a gaming PC](images/client-launcher.png)
+
+- Only the games on your list can be started this way. There is no file browser and no way to reach Windows from
+  it, so it does not weaken the lock.
+- The path must be the same on every gaming PC. A PC that does not have the game says so when the tile is pressed.
+- The grid closes when the PC locks.
+
+## 47. The games on each PC
+
+See which games every gaming PC has, including games copied from another PC without installing.
+
+![The games on your PCs, on the Games page](images/games-on-pcs.png)
+
+1. Right-click a PC on the Floor → **Games on this PC** → **Detect games**. For every PC at once, use **More** →
+   **Detect games on every PC**, or the button on the **Games** page.
+2. A few seconds later the side panel shows how many games the PC has, and their names. Click the count (such as
+   **4 games ›**), or right-click the PC → **Games on this PC** → **View games**, to see the full list: each game with
+   its cover, where it was found (Steam, Epic, a game folder, added by hand…) and its folder, with **Detect games** to
+   look again and **Add a game by hand…**. Each PC is also checked by itself once a day when it starts, never while a
+   customer plays.
+3. The **Games** page lists every game, how many PCs have it and which ones.
+
+For each game:
+
+- **Cover…** gives it a picture (see below).
+- **Rename** changes its name everywhere. Detecting again keeps your name.
+- **Add to launcher** fills in the launcher form (section 46) with the program most PCs start it with. Check it and
+  click **Add game**. If no PC said how it starts, type the program yourself.
+- **Hide** takes something that is not a game off the lists. **Show** brings it back.
+
+A game zonyo cannot find (in an unusual folder, or on a console) can be added by hand: right-click the station →
+**Games on this PC** → **Add a game by hand…**.
+
+A PC with an older zonyo Client says "update this PC to detect its games": update it first (section 35).
+
+### Covers
+
+zonyo finds most covers by itself. After it detects games, the Server looks for a cover for each new game on Steam,
+then on Wikipedia, and takes one when it is sure it is the same game. **Find missing covers** on the Games page looks
+again now; untick **Find covers online by itself** to stop it. A cover you chose yourself is never replaced.
+
+For a game it could not find:
+
+![Finding a cover](images/games-cover.png)
+
+1. Click **Cover…** next to the game.
+2. Click **Find online**. zonyo looks on Steam and Wikipedia; no account is needed. Click the picture to use.
+3. Or click **Use my own picture…** and pick a JPG or PNG.
+
+Only the counter PC needs internet, and only while you search. A game without a cover gets a coloured tile with its
+initials, so everything still looks finished with no internet at all. Covers belong to their publishers: use them to
+show which games your café has.
+
+## 48. Your games on the lock screen
+
+Each gaming PC can show the covers of its own games behind its lock screen, or as its desktop wallpaper.
+
+![A lock screen with the games on that PC](images/client-lock-games.png)
+
+1. **Settings** → **Customize** → under the lock-screen background, tick **Games on this PC**. Tick the one under
+   **Wallpaper on gaming PCs** to use it as the wallpaper too.
+2. For one PC only, right-click it on the Floor → **Games on this PC** → **Show its games on the lock screen** or
+   **Show its games as the wallpaper**.
+
+- A PC shows up to six of its games, those with a cover first, then by name. The picture is darkened so the words and
+  the PIN box stay easy to read, and the small "zonyo · zylio.net" mark stays.
+- A PC whose games have not been found yet keeps your usual picture.
+- The picture changes by itself when a PC's games, their names or their covers change.
